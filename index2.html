@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samiksha Phatangare Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="nav-container">
+                <div class="logo">SP</div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <a href="resume.pdf" class="resume-btn">Download Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="top-hero" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I’m Samiksha Phatangare</h1>
+            <p>A passionate web developer and technology enthusiast.</p>
+            <a href="#contact" class="btn">Let's Connect</a>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill"><img src="assets/skills/html.png" alt="HTML">HTML</div>
+            <div class="skill"><img src="assets/skills/css.png" alt="CSS">CSS</div>
+            <div class="skill"><img src="assets/skills/js.png" alt="JavaScript">JavaScript</div>
+            <div class="skill"><img src="assets/skills/github.png" alt="GitHub">GitHub</div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/projects/project1.png" alt="Project 1"></div>
+                <div class="swiper-slide"><img src="assets/projects/project2.png" alt="Project 2"></div>
+                <div class="swiper-slide"><img src="assets/projects/project3.png" alt="Project 3"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <p>"Samiksha is a great developer who delivers quality work on time!" - John Doe</p>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>© 2025 Samiksha Phatangare. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            autoplay: { delay: 3000 }
+        });
+    </script>
+</body>
+</html>
